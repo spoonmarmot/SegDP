@@ -1,0 +1,15 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "files.associations": {
+        "pthread.h": "c",
+        "initializer_list": "c",
+        "cstdlib": "c",
+        "getopt.h": "c",
+        "getopt_core.h": "c",
+        "getopt_ext.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "linalg.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

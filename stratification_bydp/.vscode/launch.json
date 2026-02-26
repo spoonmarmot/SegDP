@@ -1,0 +1,107 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TEST: Stratification (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake-Stratification: build"
+        },
+        {
+            "name": "MAIN: Stratification (gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/segdp",
+            "args": [
+                ///////////////////////////////////////////////////////////////////
+                // "-f", 
+                // "../../experiments/exp_synthetic/data/case1.csv",
+                // "-g",
+                // "66",
+                // "-k",
+                // "15",
+                // "-m", 
+                // "0",
+                // "-s",
+                // "none",
+                // "-a",
+                // "0.0",
+                // "-t",
+                // "-1",
+                // "-o",
+                // "./tmp.csv"
+                ///////////////////////////////////////////////////////////////////
+                "-f", 
+                "../../experiments/exp_case_study_PPMI/raw_cli_data.csv",
+                "-g",
+                "13",
+                "-k",
+                "10",
+                "-m", 
+                "0.0",
+                "-s",
+                "standard",
+                "-t",
+                "3",
+                "-o",
+                "./tmp.csv"
+                ///////////////////////////////////////////////////////////////////
+                // "-f", 
+                // "../../experiments/exp_classification/SegDP_nmiwei/data/CV_1/train_uci_503_hepatitis_c_virus_hcv_for_egyptian_patients_clf.csv",
+                // "-g",
+                // "34",
+                // "-k",
+                // "35",
+                // "-m", 
+                // "0.4",
+                // "-s",
+                // "standard",
+                // "-t",
+                // "-1",
+                // "-o",
+                // "./tmp.csv"
+
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CMake-Stratification: build"
+        }
+    ]
+}

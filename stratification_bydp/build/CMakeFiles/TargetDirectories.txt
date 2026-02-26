@@ -1,0 +1,4 @@
+/home/yinjia/Documents/stratification/stratification_bydp/build/CMakeFiles/test.dir
+/home/yinjia/Documents/stratification/stratification_bydp/build/CMakeFiles/segdp.dir
+/home/yinjia/Documents/stratification/stratification_bydp/build/CMakeFiles/edit_cache.dir
+/home/yinjia/Documents/stratification/stratification_bydp/build/CMakeFiles/rebuild_cache.dir

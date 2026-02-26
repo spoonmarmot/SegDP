@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "CMake-Stratification: build",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"${workspaceFolder}/build"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake template build task",
+			"dependsOn": ["CMake-Stratification: configure"]
+		},
+		{
+			"type": "shell",
+			"label": "CMake-Stratification: configure",
+			"command": "cmake",
+			"args": [
+				"-DCMAKE_BUILD_TYPE:STRING=Debug", 
+				"-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE", 
+				"-DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc", 
+				"-DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++", 
+				"--no-warn-unused-cli", 
+				"-S", 
+				"${workspaceFolder}", 
+				"-B", 
+				"${workspaceFolder}/build", 
+				"-G", 
+				"\"Unix Makefiles\""
+			],
+			"problemMatcher": [],
+			"detail": "CMake template configure task",
+			"dependsOn": ["CMake-Stratification: clean"]
+		},
+		{
+			"type": "shell",
+			"label": "CMake-Stratification: clean",
+			"command": "rm",
+			"args": [
+				"-rf",
+				"${workspaceFolder}/build/", 
+			],
+			"problemMatcher": [],
+			"detail": "clean the previous build"
+		}
+	]
+}

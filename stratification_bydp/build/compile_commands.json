@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/test.dir/src/test.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/test.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/test.c",
+  "output": "CMakeFiles/test.dir/src/test.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/test.dir/src/stratification_comm.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/stratification_comm.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/stratification_comm.c",
+  "output": "CMakeFiles/test.dir/src/stratification_comm.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/test.dir/src/stratification.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/stratification.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/stratification.c",
+  "output": "CMakeFiles/test.dir/src/stratification.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/test.dir/src/utils.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/utils.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/utils.c",
+  "output": "CMakeFiles/test.dir/src/utils.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/test.dir/src/linalg.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/linalg.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/linalg.c",
+  "output": "CMakeFiles/test.dir/src/linalg.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/segdp.dir/src/main.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/main.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/main.c",
+  "output": "CMakeFiles/segdp.dir/src/main.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/segdp.dir/src/stratification_comm.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/stratification_comm.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/stratification_comm.c",
+  "output": "CMakeFiles/segdp.dir/src/stratification_comm.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/segdp.dir/src/stratification.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/stratification.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/stratification.c",
+  "output": "CMakeFiles/segdp.dir/src/stratification.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/segdp.dir/src/utils.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/utils.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/utils.c",
+  "output": "CMakeFiles/segdp.dir/src/utils.c.o"
+},
+{
+  "directory": "/home/yinjia/Documents/stratification/stratification_bydp/build",
+  "command": "/usr/bin/gcc  -I/home/yinjia/Documents/stratification/stratification_bydp/include -I/home/yinjia/Documents/stratification/stratification_bydp/build -g -static -static-libgfortran -static-libgcc -o CMakeFiles/segdp.dir/src/linalg.c.o -c /home/yinjia/Documents/stratification/stratification_bydp/src/linalg.c",
+  "file": "/home/yinjia/Documents/stratification/stratification_bydp/src/linalg.c",
+  "output": "CMakeFiles/segdp.dir/src/linalg.c.o"
+}
+]
