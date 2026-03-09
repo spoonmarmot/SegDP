@@ -4,6 +4,7 @@ import pandas as pd
 import re
 from step0_const import *
 from matplotlib import pyplot as plt
+from scipy.stats import wilcoxon
 import matplotlib
 font = {'size'   : 27}
 matplotlib.rc('font', **font)
@@ -28,13 +29,29 @@ for clf in classifiers:
     f1_score = f1.replace(-np.inf, 0)
     f1_rank = f1_score.rank(axis=1, ascending=False, method="min")
     f1_score_meanrank = f1_rank.mean()
-    f1_score_moderank = f1_rank.mode(axis=0)
-    if len(f1_score_moderank.shape) > 1:
-        f1_score_moderank = f1_score_moderank.iloc[0] 
+    # f1_score_moderank = f1_rank.mode(axis=0)
+    # if len(f1_score_moderank.shape) > 1:
+    #     f1_score_moderank = f1_score_moderank.iloc[0] 
     f1_score_bestcnt = (f1_rank == 1).sum()
     
-    stat = pd.concat([f1_score_bestcnt, f1_score_meanrank, f1_score_moderank], axis=1).T
-    stat.index = ["Best cnt.", "Mean Rank", "Mode Rank"]
+    f1_pvals = [None, None, None, None]
+    for ic in [1, 2, 3]:
+        x = f1_score.iloc[:, 0]
+        y = f1_score.iloc[:, ic]
+        res = wilcoxon(x, y, alternative="greater", zero_method="zsplit", method="exact")
+        f1_pvals[ic] = res.pvalue
+    f1_pvals = pd.Series(f1_pvals, index= f1_score.columns, dtype=float) 
+    
+    stat = pd.concat([
+        f1_score_bestcnt, 
+        f1_score_meanrank, 
+        f1_pvals
+        ], axis=1).T
+    stat.index = [
+        "Best cnt.", 
+        "Mean Rank", 
+        "$p$-value"
+    ]
     
     f1 = pd.concat([f1, stat], axis=0)
     f1_list.append(f1)
@@ -52,7 +69,7 @@ for g in f1.columns.get_level_values(0).unique():
         props="textbf:--rwrap;"   # LaTeX-style props (no convert_css needed)
     )
 sty = sty.format("{:.3f}", subset=float_cols)
-sty.to_latex('./clf_performance.tex', hrules=True)
+sty.to_latex('../../manuscript/table/clf_performance.tex', hrules=True)
 
 print()
 

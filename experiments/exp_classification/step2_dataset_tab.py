@@ -20,5 +20,5 @@ list_1.index = [i for i in range(list_1.shape[0])]
 list_2.index = [i for i in range(list_2.shape[0])]
 
 full_list = pd.concat([list_1, list_2], axis=1)
-full_list.to_latex("./data_summary.tex", index=False)
+full_list.to_latex("../../manuscript/table/data_summary.tex", index=False)
 print()
