@@ -1,0 +1,14 @@
+,file,samples,features,num_features,cate_features
+0,uci_529_early_stage_diabetes_risk_prediction_clf.csv,520,16,1,15
+1,uci_277_thoracic_surgery_data_clf.csv,470,16,3,13
+2,uci_545_rice_cammeo_and_osmancik_clf.csv,3810,7,7,0
+3,uci_030_contraceptive_method_choice_clf.csv,1473,9,2,7
+4,uci_107_waveform_database_generator_version_1_clf.csv,5000,21,21,0
+5,uci_292_wholesale_customers_clf.csv,440,7,6,1
+6,uci_050_image_segmentation_clf.csv,210,18,16,2
+7,uci_143_statlog_australian_credit_approval_clf.csv,690,14,6,8
+8,uci_151_connectionist_bench_sonar_mines_vs_rocks_clf.csv,208,60,60,0
+9,uci_096_spectf_heart_clf.csv,267,44,44,0
+10,uci_759_glioma_grading_clinical_and_mutation_features_clf.csv,839,23,1,22
+11,uci_078_page_blocks_classification_clf.csv,5473,10,10,0
+12,uci_519_heart_failure_clinical_records_clf.csv,299,12,7,5
